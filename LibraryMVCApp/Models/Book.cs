@@ -11,10 +11,10 @@ namespace LibraryMVCApp.Models
         public string Writter;
         public int YearOfOut;
         public int NumberPages;
-        public int id = 0;
-        public Book(string _name , string _writter , int _yearOfOut , int _numberPages)
+        public int id;
+        public Book(string _name , string _writter , int _yearOfOut , int _numberPages, int _id)
         {
-            this.id = id++;
+            this.id = _id;
             this.Name = _name;
             this.Writter = _writter;
             this.YearOfOut = _yearOfOut;
@@ -24,6 +24,8 @@ namespace LibraryMVCApp.Models
         {
 
         }
+ 
+
 
 
     }
